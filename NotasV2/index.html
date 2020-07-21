@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lançamento Notas</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+
+    <body>
+        <header class = 'menu'>
+            <div class="menu-logo">
+                <p>Colégio XX</p>
+            </div>
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Disciplinas</a></li>
+                    <li><a href="#">Notas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <p>
+                <h3>Cadastro de Alunos</h3>
+            </p>
+
+            <div class = "input-info">
+                <label for="matricula-aluno">Número matrícula: </label>
+                <input type="text" name="matricula" id = "matricula-aluno" />
+                <label for="nome-aluno">Nome: </label>
+                <input type="text" name="nome" id="nome-aluno" />
+                <label for="nota-B1">Nota 1º bimestre: </label>
+                <input type="number" name="nota1" id="nota-B1" />
+                <label for="nota-B2">Nota 2º bimestre: </label>
+                <input type="number" name="nota2" id="nota-B2"  />
+                <label for="nota-B3">Nota 3º bimestre: </label>
+                <input type="number" name="nota3" id="nota-B3" />
+                <label for="nota-B4">Nota 4º bimestre: </label>
+                <input type="number" name="nota4" id="nota-B4" />
+            </div>
+            <div class="botao">
+                <button id = "botao-cadastro" onclick="cadastroAluno()">
+                    Cadastrar Aluno
+                </button>
+                <button id = "botao-media" onclick="setTabelaNotas()">
+                    Obter Médias
+                </button>
+            </div>
+
+            <p id = "media-section">
+                
+            </p>
+
+            <table id = "tabela-notas", class="tabela">  
+                <!-- <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nome</th>
+                        <th>1º Bimestre</th>
+                        <th>2º Bimestre</th>
+                        <th>3º Bimestre</th>
+                        <th>4º Bimestre</th>
+                        <th>Média Final</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead> -->
+                <tbody id ="corpo-tabela">
+
+                </tbody>
+            </table>
+        </div>
+    
+        
+        <footer class = 'footer'></footer>
+
+        <script src="scripts/lancaNotas.js"></script>
+    </body>
+</html>

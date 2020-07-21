@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0px; 
+    padding: 0px;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*HEADER*/
+
+.menu{
+    background-color: cadetblue;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu-logo p{
+    font-size: 2.25em;
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a{
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover{
+    color:darkblue;
+}
+
+/*CONTENT*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+table, tr, th, td{
+    border-collapse: collapse;
+    border: 1.5px solid black;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+    width: auto;
+}
+
+.input-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+.botao{
+    margin: 15px;
+    justify-self: center;
+} 
+
+#botao-media, #botao-cadastro{
+    padding: 3px;
+}
+
+/*FOOTER*/ 
+.footer{
+    background: cadetblue;
+    height: 60px;
+    flex-basis: auto;
+    margin-top: 15px;
+    width: 100%;
+}
