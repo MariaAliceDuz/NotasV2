@@ -63,7 +63,7 @@ function cadastroAluno(){
 
 
 function setTabelaNotas(){
-    if(turma.length < 1){
+    if(turma.length < 15){
         alert("Necessário 15 alunos no mínimo.")
     }
     else{
